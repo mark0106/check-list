@@ -2,8 +2,7 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Name] VARCHAR(50) NULL, 
-    [Email] VARCHAR(50) NULL, 
-    [Password] VARCHAR(50) NULL, 
     [CreateDate] DATETIME NULL, 
-    [LastLoginDate] DATETIME NULL
+    [LastLoginDate] DATETIME NULL, 
+    [EndDate] DATETIME NULL
 )
