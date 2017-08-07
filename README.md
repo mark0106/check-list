@@ -17,8 +17,8 @@ index.html
 
 SQL Database Info:
 I added a sql database project to the solution so you can see the schema. The database consists of three tables:
-1) Login, 
-2) CheckList, 
-3) CheckListItem, 
+1) Login
+2) CheckList
+3) CheckListItem
 
 LoginId is a foreign key contraint in CheckList table and CheckListId is a foreign key contstraint in CheckListItem
