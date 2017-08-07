@@ -63,4 +63,7 @@
     <Build Include="CheckList.sql" />
     <Build Include="CheckListItem.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="dbchecklist.refactorlog" />
+  </ItemGroup>
 </Project>
