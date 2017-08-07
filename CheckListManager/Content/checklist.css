@@ -1,0 +1,181 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+a {text-decoration:none;}
+a:hover {opacity: .7;}
+input[type=text] {outline:none; border: none; position: relative; bottom: 2px; left: 5px; width: 200px;}
+input[type=text]:focus {outline:none; background-color: #FFF;}
+.cl-container {border: solid 1px #ccc; margin: 20px auto; width: 1000px; font-family: 'Trebuchet MS'; padding: 20px; border-radius: 5px;}
+.cb-left-sec {float: left;}
+.cb-right-sec {float: left;}
+.clearfloat {clear:both; margin: 0; padding: 0;}
+
+.add-list-item {margin-left: 30px;}
+.title-sec {font-size: 1em;}
+.add-item-sec {font-size: .8em; margin-top: 10px;}
+.add-item-sec a {color: #999; text-decoration:none;}
+.add-item-sec a:hover {text-decoration:none; color: #999;}
+.cb-remove {float: left; margin-left: 20px; font-size: .8em;}
+.cb-remove a {text-decoration: none;}
+.cb-remove a:hover {text-decoration:none;}
+.remove-btn {border-radius: 50%; background-color: #333; color: #FFF; width: 20px; padding: 0 4px;}
+.new-list {margin-top: 10px;}
+#btnSave {border-radius: 3px; color: #FFF; background-color: #014a81; padding: 5px 20px; border: solid 1px #014a81; margin-top: 30px;}
+#btnSave:hover {cursor:pointer; opacity: .7;}
+.checkmark-circle {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: none;
+  vertical-align: top;
+  float: left;
+  left: 20px;
+  bottom: 2px;
+}
+.checkmark-circle .background {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2EB150;
+  position: absolute;
+}
+.checkmark-circle .checkmark {
+  border-radius: 5px;
+  position: relative;
+  bottom: 9px;
+  right: 3px;
+}
+.checkmark-circle .checkmark.draw:after {
+  -webkit-animation-delay: 100ms;
+  -moz-animation-delay: 100ms;
+  animation-delay: 100ms;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-name: checkmark;
+  -moz-animation-name: checkmark;
+  animation-name: checkmark;
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  -moz-transform: scaleX(-1) rotate(135deg);
+  -ms-transform: scaleX(-1) rotate(135deg);
+  -o-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.checkmark-circle .checkmark:after {
+  opacity: 1;
+  height: 10px;
+  width: 5px;
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  border-radius: 2.5px !important;
+  content: '';
+  left: 6.66667px;
+  top: 20px;
+  position: absolute;
+}
+
+@-webkit-keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 5px;
+    opacity: 1;
+  }
+  40% {
+    height: 10px;
+    width: 5px;
+    opacity: 1;
+  }
+  100% {
+    height: 10px;
+    width: 5px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 5px;
+    opacity: 1;
+  }
+  40% {
+    height: 10px;
+    width: 5px;
+    opacity: 1;
+  }
+  100% {
+    height: 10px;
+    width: 5px;
+    opacity: 1;
+  }
+}
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 5px;
+    opacity: 1;
+  }
+  40% {
+    height: 10px;
+    width: 5px;
+    opacity: 1;
+  }
+  100% {
+    height: 10px;
+    width: 5px;
+    opacity: 1;
+  }
+}
+#login-page {margin: 0; padding: 0;}
+#login-page a {text-decoration:none; color: #999; border: solid 2px #333; padding: 5px 20px; border-radius: 3px;  margin-top: 20px; width: 130px;}
+#login-page a:hover {text-decoration: none; opacity: .7;}
+#list-page {display: none;}
+.img-user {float: left; height: 25px; margin-right: 10px;}
+.user-select {float: left; position: relative; left: 10px; font-size: 1.2em; top: 4px;}
+.my-lists-container a {text-decoration:none; color: #000; border: solid 2px #ccc; padding: 5px 20px; border-radius: 3px;  margin-top: 20px; width: 200px; display: block; float: left; background-color: #efefef;}
+.my-list-container a:hover {text-decoration: none; opacity: .7;}
+#my-lists-page {display:none;}
+.img-list {height: 30px;}
+.ml-header {font-size: 1.3em; position: relative; bottom: 9px; display: inline-block; left: 10px;}
+.list-m-sec {margin-top: 10px;}
+.no-content {display: none; color: #999; font-size: 1.2em; margin-top: 20px;}
+.ml-sec a {text-decoration:none;}
+.ml-sec a:hover {text-decoration:none; opacity: .7;}
+.btn-add {
+    color: #FFF; 
+    background-color: #000; 
+    float: right;
+    right: 700px;
+    position: relative;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+.error-msg {color: red; padding: 0px 10px; display: none;}
+.delete-list {background-color: red !important; color: #FFF !important; padding: 5px 15px; margin-left: 10px; font-size: .8em; float: left; width: 50px !important; border: solid 1px black !important;}

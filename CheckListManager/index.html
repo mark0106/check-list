@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Checklist</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../Content/checklist.css" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/checklist.js?v=101"></script>
+</head>
+<body>
+    <div class="cl-container">
+        <div id="login-page">     
+            <a href="#" class="user-select" onclick="getMyLists(1)"><img class="img-user" src="Images/icon-user.png" />Mark Morin</a>
+            <div class="clearfloat"></div>
+            <a href="#" class="user-select" onclick="getMyLists(2)"><img class="img-user" src="Images/icon-user.png" />Jane Doe</a>
+            <div class="clearfloat"></div>
+            <a href="#" class="user-select" onclick="getMyLists(3)"><img class="img-user" src="Images/icon-user.png" />Joe Smith</a>
+            <div class="clearfloat"></div>
+        </div>
+        <div id="my-lists-page">
+            <div class="ml-sec">
+                <a href="#" id="btnAdd" class="btn-add" onclick="addCheckList()">+ Add</a>
+               
+                <img class='img-list' src='Images/icon-list.png' />
+                <div class="ml-header">
+                    My Check Lists
+                </div>
+                <div class="no-content">Sorry you currently do not have any check lists</div>
+            </div>
+            <div class="my-lists-container">
+                <!--content is dynamically generated in checklist.js-->
+            </div>
+        </div>
+        <div id="list-page">
+            <label id="CheckListId" style="display:none"></label>
+            <label id="CheckListItemCount" style="display:none"></label>
+            <label id="LoginId" style="display:none"></label>
+            <div class="error-msg"></div>
+            <div class="title-sec">
+                <input type="text" id="ListTitle" placeholder="Title" style="font-size: 1.3em;" />
+            </div>
+            <div class="list-container">
+                <!--content is dynamically generated in checklist.js-->
+            </div>
+            <div class="add-item-sec">
+                <a href="#" class="add-list-item" onclick="addListItem()">+ List Item</a>
+            </div>
+            <!--<input type="button" id="btnSave" value="Save" />-->
+        </div>
+        
+        <!--<div class="cb-left-sec">
+            <input type="checkbox" id="cb-1" />
+        </div>
+        <div class="cb-right-sec">
+            <input type="text" id="tb-1" placeholder="Enter task description" />
+        </div>
+        <div class="cb-remove">
+            <a href="#" class="remove-btn" onclick="removeListItem()">X</a>
+        </div>
+        <div class="clearfloat"></div>-->
+    </div>
+</body>
+</html>
